@@ -1,0 +1,109 @@
+/* =========================
+   Identidade Visual - ONG Horizonte Educação
+   ========================= */
+
+:root {
+    --azul: #0072BB;
+    --amarelo: #FFC72C;
+    --azul-escuro: #004E8A;
+    --cinza: #333;
+    --branco: #fff;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--azul);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--amarelo);
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--azul);
+}
+
+/* BOTÕES */
+button,
+.btn {
+    background-color: var(--amarelo);
+    color: var(--azul-escuro);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
