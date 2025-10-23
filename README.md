@@ -42,4 +42,4 @@ Categoria	Ferramentas
 Linguagens	HTML5, CSS3
 Versionamento	Git & GitHub (GitFlow)
 Acessibilidade	Diretrizes WCAG 2.1
-Hospedagem (opcional)	GitHub Pages / Vercel
+
