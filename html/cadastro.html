@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro | Horizonte Educação</title>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="/imagens/logo.png" alt="Logo ONG Exemplo" width="160"
+                    height="60"></a>
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <h1>Cadastro — Voluntário / Doador</h1>
+
+        <form id="formCadastro" action="#" method="post" novalidate>
+            <!-- Identificação -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                <input id="nome" name="nome" type="text" required minlength="3" maxlength="100"
+                    aria-describedby="nomeHelp">
+                <small id="nomeHelp">Informe seu nome completo.</small>
+
+                <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" required placeholder="seu@exemplo.com"
+                    aria-describedby="emailHelp">
+                <small id="emailHelp">Usaremos para contato e envio de certificados.</small>
+
+                <label for="cpf">CPF <span aria-hidden="true">*</span></label>
+                <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required
+                    maxlength="14" aria-describedby="cpfHelp" placeholder="000.000.000-00">
+                <small id="cpfHelp">Formato: 000.000.000-00</small>
+
+                <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+                <input id="telefone" name="telefone" type="tel" inputmode="tel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                    required placeholder="(21) 91234-5678" aria-describedby="telHelp">
+                <small id="telHelp">Formato: (21) 91234-5678</small>
+
+                <label for="nascimento">Data de nascimento</label>
+                <input id="nascimento" name="nascimento" type="date" max="2007-12-31" aria-describedby="nascHelp">
+                <small id="nascHelp">Se for menor de idade, contate a coordenação.</small>
+            </fieldset>
+
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP <span aria-hidden="true">*</span></label>
+                <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" required maxlength="9"
+                    placeholder="00000-000" aria-describedby="cepHelp">
+                <small id="cepHelp">Formato: 00000-000</small>
+
+                <label for="endereco">Endereço</label>
+                <input id="endereco" name="endereco" type="text" maxlength="200">
+
+                <label for="cidade">Cidade</label>
+                <input id="cidade" name="cidade" type="text">
+
+                <label>Estado:</label>
+                <select id="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </select>
+
+                <small id="estadoHelp">UF</small>
+            </fieldset>
+
+            <!-- Preferências -->
+            <fieldset>
+                <legend>Interesse</legend>
+
+                <label for="perfil">Sou:</label>
+                <select id="perfil" name="perfil" required>
+                    <option value="">Selecione</option>
+                    <option value="voluntario">Voluntário</option>
+                    <option value="doador">Doador</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="areas">Áreas de interesse (marque as que desejar)</label>
+                <div id="areas">
+                    <label><input type="checkbox" name="areas" value="educacao"> Educação</label>
+                    <label><input type="checkbox" name="areas" value="alimentacao"> Alimentação</label>
+                    <label><input type="checkbox" name="areas" value="saude"> Saúde</label>
+                </div>
+
+                <label for="bio">Breve apresentação</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="1000"
+                    placeholder="Fale brevemente sobre você"></textarea>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit">Enviar cadastro</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="ano3"></span> ONG Exemplo.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+    <script>
+        document.getElementById('ano3').textContent = new Date().getFullYear();
+
+        // tratamento simples para exibir mensagens personalizadas antes do envio 
+        (function () {
+            const form = document.getElementById('formCadastro');
+            form.addEventListener('submit', function (e) {
+                if (!form.checkValidity()) {
+                    // permite que o navegador mostre suas mensagens nativas; 
+                    e.preventDefault();
+                    form.reportValidity();
+                } else {
+
+                    e.preventDefault();
+                    alert('Cadastro validado! (substitua o preventDefault por envio real)');
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Horizonte Educação</title>
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Página inicial - ONG Exemplo">
+                <img src="/imagens/logo.png" alt="Logomarca ONG Exemplo">
+            </a>
+            <nav class="main-nav" role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" role="main" class="container">
+        <section aria-labelledby="sobre">
+            <h2 id="sobre">Sobre a organização</h2>
+            <p>Organização sem fins lucrativos que promove reforço escolar e inclusão digital para jovens e adultos em
+                situação de vulnerabilidade, com foco em alfabetização, habilidades digitais e formação para o trabalho.
+            </p>
+            <figure>
+                <img src="/imagens/voluntarios.jpg" alt="Equipe da ONG em ação" loading="lazy" width="800" height="450">
+                <figcaption>Equipe voluntária em ação</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="missao">
+            <h2>Missão</h2>
+            <p>
+                Promover acesso à educação básica e competências digitais para pessoas jovens e adultas, fortalecendo
+                autonomia,
+                empregabilidade e inclusão social.
+            </p>
+
+            <h2>Visão</h2>
+            <p>
+                Ser referência regional em programas integrados de alfabetização e inclusão digital até 2030, ampliando
+                oportunidades e reduzindo barreiras de acesso ao conhecimento.
+            </p>
+
+            <h2>Valores:</h2>
+
+            <ul>
+                <li>Respeito e dignidade humana</li>
+                <li>Inclusão e equidade</li>
+                <li>Transparência e responsabilidade</li>
+                <li>Cooperação comunitária</li>
+                <li>Inovação pedagógica</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="contato" id="contato">
+            <h2>Contato</h2>
+            <address>
+                <p>Rua da Educação, 123 — Rio de Janeiro — RJ</p>
+                <p>Telefone: <a href="tel:+5511999999999">(21) 99999-9999</a></p>
+                <p>E-mail: <a href="mailto:contato@horizonte.org">contato@horizonte.org</a></p>
+            </address>
+        </section>
+
+        <aside aria-labelledby="apoie">
+            <h2 id="apoie">Como apoiar</h2>
+            <p>Faça doações, seja voluntário ou compartilhe nossos projetos.</p>
+            <p><a href="projetos.html">Veja os projetos</a></p>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="ano"></span> Horizonte Educação. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ano automático (acessível, pequeno)
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

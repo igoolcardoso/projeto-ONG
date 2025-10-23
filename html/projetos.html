@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projetos | Horizonte Educação</title>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="/imagens/logo.png" alt="Logo ONG Exemplo" width="160"
+                    height="60"></a>
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="container">
+        <h1>Projetos Sociais</h1>
+
+        <section aria-labelledby="lista-projetos">
+            <h2 id="lista-projetos">Projetos Ativos</h2>
+
+            <article class="project-card" aria-labelledby="proj1">
+                <h3>Reforço Escolar e Alfabetização </h3>
+                <p>Objetivo: alfabetização de jovens e adultos; reforço em leitura, escrita e matemática básica.
+                </p>
+                <p>Atividades: aulas presenciais em turmas reduzidas, material impresso/digital, avaliação diagnóstica
+                    inicial.
+                </p>
+                <figure>
+                    <img src="/imagens/educacaotodos.jpg" alt="Crianças em sala de aula do projeto Educação para Todos"
+                        loading="lazy" width="640" height="360">
+                </figure>
+                <p>Indicadores: <strong>200</strong> atendidos no ano.</p>
+                <p><a href="#" class="btn">Saiba mais</a> <a href="#" class="btn">Quero ser voluntário</a></p>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj2">
+                <h3>Inclusão Digital</h3>
+                <p>Objetivo: ensinar habilidades digitais básicas (uso de navegador, e-mail, pacote office, segurança
+                    online)
+                    e oferecer acesso à internet e dispositivos.</p>
+
+                <p>Atividades: oficinas práticas, empréstimo de tablets/telefones, trilhas de aprendizagem com
+                    certificado.</p>
+                </p>
+                <figure>
+                    <img src="/imagens/inclusaodigital.jpg" alt="Distribuição de alimentos" loading="lazy" width="640"
+                        height="360">
+                </figure>
+                <p>Meta: <strong>R$ 50.000</strong> — arrecadado R$ 21.000.</p>
+                <p><a href="#" class="btn">Doar</a> <a href="#" class="btn">Quero ajudar</a></p>
+            </article>
+        </section>
+
+        <section aria-labelledby="voluntariado">
+            <h2 id="voluntariado">Oportunidades de Voluntariado</h2>
+            <p>Explicação de como se candidatar. Link para formulário de inscrição.</p>
+            <p><a href="cadastro.html#voluntario">Inscreva-se como voluntário</a></p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="ano2"></span> ONG Exemplo.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('ano2').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
